@@ -15,10 +15,18 @@ td{
 
 header, footer{
 	text-align: center;
-	background-color: #2B9177;
+	background-color: #c8c9c1;
 	width: 750px;
 	margin-left: auto;
 	margin-right: auto;
+
+	border: 3px black solid;
+	border-radius: 20px;
+
+}
+
+header:hover, footer:hover{
+	background-color: aquamarine;
 }
 
 img{
@@ -28,10 +36,12 @@ img{
 }
 
 body{
-	background-color: #005C45;
-	font-family: lucida console
+	font-family: lucida console;
 }
 
+img:hover{
+	cursor: pointer;
+}
 
 #zdj1:hover{
 	filter: grayscale(90%);
@@ -43,4 +53,36 @@ body{
 
 #zdj3:hover{
 	filter: saturate(150%);
+}
+
+#zdj4:hover{
+	filter: brightness(120%);
+}
+
+#zdj5:hover{
+	filter: invert(180%);
+}
+
+#zdj6:hover{
+	filter: contrast(160%);
+}
+
+#zdj7:hover{
+	filter: blur(2px);
+}
+
+#zdj8:hover{
+	filter: saturate(180%);
+}
+
+#zdj9:hover{
+	filter: sepia(80%);
+}
+
+#background_video{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
 }
