@@ -1,38 +1,29 @@
 table{
 	margin-left: auto;
 	margin-right: auto;
-	border: solid 1px black;
 	border-collapse: collapse;
-
 }
 
 td{
-	border: solid 1px black;
+	border: solid 1px;
 	border-color: black;
 	font-size: 0;
-
 }
 
 header, footer{
+	color: white;
 	text-align: center;
-	background-color: #c8c9c1;
 	width: 750px;
 	margin-left: auto;
 	margin-right: auto;
-
-	border: 3px black solid;
+	border: 2px black solid;
 	border-radius: 20px;
-
-}
-
-header:hover, footer:hover{
-	background-color: aquamarine;
+	background-color: rgb(192,192,192, 0.7);
 }
 
 img{
 	width: 250px;
 	height: 250px;
-
 }
 
 body{
@@ -60,7 +51,7 @@ img:hover{
 }
 
 #zdj5:hover{
-	filter: invert(180%);
+	filter: saturate(180%);
 }
 
 #zdj6:hover{
@@ -72,7 +63,7 @@ img:hover{
 }
 
 #zdj8:hover{
-	filter: saturate(180%);
+	filter: invert(180%);
 }
 
 #zdj9:hover{
@@ -85,4 +76,32 @@ img:hover{
 	bottom: 0;
 	min-width: 100%;
 	min-height: 100%;
+}
+
+/*video background*/
+video {
+	object-fit: cover;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.viewport-header {
+	position: relative;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+div#background{
+	border: 4px solid white;
+	margin: 1% 25% 1% 25%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	background-color: rgb(192,192,192, 0.6);
+
+	border-color: black;
+	border-radius: 20px;
 }
